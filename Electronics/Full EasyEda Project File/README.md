@@ -1,0 +1,1 @@
+This is also able to be imported in KiCad
