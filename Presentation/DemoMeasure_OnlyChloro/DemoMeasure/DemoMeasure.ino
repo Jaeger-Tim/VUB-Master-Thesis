@@ -406,10 +406,10 @@ void calculateSampleConcentration() {
     c[wavelength] = (log10(I_0[wavelength]/I_s[wavelength])) / K[wavelength];
   }
 
-  // Only print the concentration for 560 nm
+  // Print the concentration for 560 nm (highest correlation)
   #if VERBOSITY >= 3
     Serial.print("Concentration at 560 nm: ");
-    Serial.print(c[6]); // Only print 560 nm concentration
+    Serial.print(c[6]);
     Serial.println("");
   #endif
 
